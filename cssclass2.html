@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color:orange;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAAELCAMAAAC77XfeAAAA81BMVEX///8mTeQpZfHr6+sAAAATQ+OgrPEoW+woYO7z8usiS+QnZPHv7uv5+fkOQeS0u+g9XOWkpKSmr+iysrKTk5MOW/CsrKzj4+M8PDxDQ0PDz/q0xPlCc/IAOuIAPOKwuOgAV/AnUuf2+P7w8v2JmO5sgOqZpvDX3/y9xfXg5Pqxu/N8jeyRn+/S1/jo6/soW+ukt/hZceh0h+t+m/WlsPHBx+lHZOe6urpjeen///mQnedQfPODk+3K1fvX2uqOp/ZdhPNPaeVtj/Scp+jO0upvguZRUVHa2tovLy9oaGiJo/YzbPKsvvhYgfNMefNCYOUAL+PDgVfvAAAMFUlEQVR4nO2de1/bOhKGTbsmwUnNbUO7UIeES4FwSbm1nB6gBcrZbuHAfv9Ps06I4ljWzEhjKcb78/u3Yp7YGvuN5rXwPAP98x+I3g1GvMdGrAwP8gEZ8S8TGlNV9BV9RV/RV/QVvRX6X6+H/sPXtJbfZ+gXpRFfXw/9X+qDfJA/My1N0qtP0yT9r+WVlBb/naFfTI9YWZ4WvfoP5Zz3H0pNP7V7TkVf0Vf0FX1F75z+12ugVzuFpvzo/0+G/qs0YrEI+ozUjmuSbUU5ovl66N+tLKf0VXHu0yNe07kvy7xn07+Ke05FX9FX9BV9Re+cHntaOV1ToNVcRPSynrOMjHC6nlOpUqVKlSpVqlSp0v+/ZkusnrcQ+mVVe9u7CGbKKn/L2y8x/ax34BcNwZbf887KSx/uemth0RBstQ+9qxLT73k77aIh2Io2vaOoaAi2Is/bKC+9H1uF0s6cYCGmD8r6uAqOY/ovpaU/iem3y0rvH8T0l2V92PpnMf0nl/S1ukXV0scO12L6nlP6NxYl01/F9LsurYJL+vZOTH/o8oZvlb6bPnZ0FNPvlZZ+8LN806VVcEnvD1cVSkOfPnTQH9K7tAou6Y+H9M9loU9zBvdDepdrIjbpG2lOf2tIv+/wcWWTvp4+tD87pHe5JmKTvp8+dNgb0rtcE7FJLxuF1SG9S6vgkH5oFDzvyuHD1iH90Ci4tQo26bsS/Ybn2iq4pB81IEpCnz5y0B3Rl6RqpUftzYh+wd3D1iK99KgNtkf0x2Wk9y9H9CeloJeNwqcRPWUVAr5qbxpsSfSSUfB7oumJ0wdd83Mu1M9xsiV82easjuh7+E2nfT3H1h9GveOU1lppetkoHI7GEe2T8Lz5lqscLy/PSvTdNNXIKHhU+yScL4T+dw2n3xiNI9on/lIh9Ld1lL4txr0j6L/NFUH/p0SfhgqC8UB83vuXhdDL9xyJ/st4YBd9XAUXhdBLRSvbnIvxQNwqBDdF0G90pLs/YBQ87x6n7xZBfyTRQ0bB87bwh21YxD1nh6A/G48krEL0vgD6VWney0ZhdzyStArsk8+n1zUK8fd0ZhX49J8J+r3xSHdWgU9PGYXN8Uh3VoFPTxiFKBlJJC1yWAU+/d+6RoFKWuSwCnz6B9woLEwMdWYV+PTaRsHzblxZBT49YRT2J4biSYtgZvr0GaMg0R9MjCWSFnyrwKbfkWYObBTIpAXfKrDpr7SNApm0aF/PNXlirylQRuFqYizRPvHv5plapbQD0OsbBTpp4YdMBS1cne8A/Xdto+B5e66W8Kl1zNYjQH+qbRQchjJJ+l2A/gdqFGbC1ODC6A8B+o/6RsFd0oKi7+wB9C2JXjIKx6nBrkKZJP0mQC89amX6k9RgV0kLkh6A3ySMwlZqtKukBUHfqAP0e8SKwmxqtKukBUX/EaCnjEIvNdpV0oKgr/8A6HfxR+24cTIa7ahnS9GfAvSPhFFIGwxXSQuCvgYaBc3GyYtcJS0I+tZngJ4yCmnn7SppQdGvAfSyUZDo29LwguivlOykUehKw4u557Qgey/3miX6G2m4o6QFQd85UrJTKwrjhIWQo6QFRQ/Ay0ZBHcVM5ChpwaQ3MwrOrAJO33gA6A8letwoOLMKOH39b4CeapysSuMdvahK0N8C9JRRkH+RUS+qcvM5aAKn9Rug101YCBHtk6C/wNLDR0wPXKOwIY2n2ifrU83n6CYsxnLTPmGuYz7hjRPZKFBWgds+YdITRuFL5gN9fAl/e6r0xIqCbBRcJS149HLCQl5RuMx8wk3Sgkevn7AQcpO04NFTCQvZKNBJCxY8k142CvKKQnbp1k3SgkdvahTIpEX75xTpKaOQXbp1k7Tg0etGMRO5SVrw6PUTFkJukhY8eu0oZiKCfmuK9EQU81nxESJpwbMKPHrCKFwoPuIkacGip6KY+4rPEEmL/vToTRIWQkTSoj09epOEhRCVtODA8+hNEhZCZNKCc8Nn0ZskLIScWAUWvUnCQohIWvCsAoteP4qZiEhahOucjA5rTcHcKJBWIbhfYqi3BusR6vLjUczRHhayiPZJwNkEsoNkcwJ5NVLIIIqZyEXSAlvH7ECNE6OEhZCLpAVKz2ycnCg/5CJpgdJnf2QMRSUsVEbBTdICpQdOPccouNn+CqFvNAB6yiioe7wu2icY/RNAzzEKbpIWCD3YOKGMgvpW5WL7K4weyodQUUz1rcpF0gKhb8ltSyGTKGYiKmkRQHlXJj0UJCUSFmqjQFmFYHt+XaV57DmB0UNGgUhY9IGP4VbB31ebzDmsUY3RQ0HSGk6vNgpU0gJ6+6R5x6MHg6RGUcxEuFUIngH6deROi9EDQVLThIUQbhWCAKA/Z9IDFKYJCyEiadFW//hr/kTutDA9GCQ9NIpiJiKsQnStxr/m0UNGwSyKOfE55qoCix4MkppFMRMRoUzoRdU51j0HNgqGCQshwiqE6wA9cqeF6VtQkNQ0YSFEWAX/DqBHGtUIPZQPIYwCYHM8btJiDmlUI/TQGydPZlHMRMRbV/sAPdKoRuh1jQKw2VVW9q0CTK9rFKgoZiIiafEFoF+CrxlCDxgF/T0sZOGhTOhF1eY8ix5goIxCNmEhRCQtIoAesQogPWwU8CimImEhxNvToolYBZgeeuPENIqZiJu0+K8PTTmIvtGCgqTmCYvx9yboAavQXD8J2uovoKJv1Fudj98hu2IaxUzETVo05+Z+3l20Fd8gQx+TN053oTfcYp0aJyyEciQt4t+3b8+/PUdh+hvUJPLOLdhzGInTOHlRzqRFfAnez+93o4kvMKZv1Fqdp1l40o5FRDFVCQshgl4jlBl/g+uli1BMopqY6G9+r8LXfFLam11lZSVpEU+i5vm3m+Ekqg2mS+v2Ea41WYyEhZC1pEV8Cd7OX3ajoPPnZ+juohTfKFhOWgwm0appw9Y8ipmI2tPCNGlh3q/V3+wqK+tJC+Neuf5mV1lZD2Ua0/ONgoOkhTE9J2EhZD1pYUzPSVgIWQ9lGtPzjQJtFe5MbzrG9AabXWVFbH9lHMo0picSFqooZqIZ/HF175zeYLOrrPCkRXDsnJ4RxUxEtE+6P+fmjArXlF5+WOklLIQIqxD/ALxfujb4Bib0e48/OvLEMTEKOkmLIIwWts5jE6z1DXTpN1ZPG52WdL95Y2YUNJMWgR+2L+60LoEW/c7sU0wu71o+lF7CQkg7aRH4Ufdy/i31DUj6zbXbluqkA/T4j2KTpMXgEtx8w+sYp7/6/gCd9JG66T+JGgXzpEXgx3W8Dk8imH7vc1yj8mo3SY/Cs/a0GNTxAVDHanqoRrOS/hSUsBDi7WkB1rGCHqlRih6IYibihzKVdSzRH8U12tI66SNpRTET5fpHY/EliG7uJut4kp6uUZIeSlgI5Q5lputY0OvVaEb4ZldZ2QhlBkkdD+jjGq3r1WiWPn1gMGEhZGtPi/gStC+Wrv8wqtGMdBMWQjZDmfE3CFpyJNpIugkLIcuhzJz/a0Y3YSFkefurnPTd9NGQxsmLLIcyLdNTps/y9leW6Ql429tf5aRPHwxJWAi9qpmjnbAQsrv9VR76Rr+bPhiSsBCyu/0Vm75ey3ahSKNge/srFn2j1lWuipFGgUxaOKev18D1PNIokEkLp/QNxXSZpKeMAtk+cUY/qFFi0qKNkxdR2185oVfVaFakUSCTFvbpoRpV0NPddqJ9YpkeqdGsQhKe+kdjFun1pkuiYIamt/s/ScFsFF2jWXraKFDtExv0pid9JB9vnLzo00wExszy0+vXaEqDtZZn+mE10FFPmdLKT29Uo5PoUbC/qxfvedHhwUIU5n/buTY5XTgHiH/ZR8dnRBpMpc3dEz/vJKqxa3SIHkbdLbzhgGpv9kYOyhmpz67R+KSH2z39TBWgjdXLLvsSdNk1+uWTRgRPT3EdR5bqWAM98s1qVEeW6pggZ9aojmzUMYIeRrU8NaqjnZx1DJD77baFGtXRuzx1rCK3WqM6svU8Nn+O2lLeOnZaozraXDvxeZcgrtG+6xrVkXkdT7FGdRQ/jwPNOn6pUaNs8jR0dEY/j4urUR291DE4XYqtUR3FdRxmL0FerztNpevYktedpuI6Hvw+LuA5aktHve3+lubrJjz9DxSzF+4HrGChAAAAAElFTkSuQmCC),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmx7AzUqi3wbfWeIWEFhujUWOLhnlI1VC-eQ&usqp=CAU),url("nature-photography.jpg");
+background-repeat: no-repeat,no-repeat,no-repeat;
+background-position: left, right,top left;
+background-attachment: fixed;
+background-size: 50% 50%,50% 50%,20% 20% ;
+		}
+		#good{
+	color: blue ;
+		}
+		#my{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<h1 id="good">good morning bro</h1>
+<h1 id="my">learning about css</h1>
+<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+
+CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+
+Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]
+
+The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+
+The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.[5]
+
+In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL.Selector
+"CSS class" redirects here. For non-CSS use of element classes in HTML, see class attribute (HTML).
+In CSS, selectors declare which part of the markup a style applies to by matching tags and attributes in the markup itself.
+
+Selectors may apply to the following:
+
+all elements of a specific type, e.g. the second-level headers h2
+elements specified by attribute, in particular:
+id: an identifier unique within the document, denoted in the selector language by a hash prefix e.g. #id
+class: an identifier that can annotate multiple elements in a document, denoted by a dot prefix e.g. .classname (the phrase "CSS class", although sometimes used, is a misnomer, as element classes—specified with the HTML class attribute—is a markup feature that is distinct from browsers' CSS subsystem and the related W3C/WHATWG standards work on document styles; see RDF and microformats for the origins of the "class" system of the Web content model)
+elements depending on how they are placed relative to others in the document tree.
+Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, hyphens, and underscores. A class may apply to any number of instances of any elements. An ID may only be applied to a single element.
+
+Pseudo-classes are used in CSS selectors to permit formatting based on information that is not contained in the document tree. One example of a widely used pseudo-class is :hover, which identifies content only when the user "points to" the visible element, usually by holding the mouse cursor over it. It is appended to a selector as in a:hover or #elementid:hover. A pseudo-class classifies document elements, such as :link or :visited, whereas a pseudo-element makes a selection that may consist of partial elements, such as ::first-line or ::first-letter.[6] Note the double-colon notation for pseudo-elements versus single-colon notation for pseudo-class.
+
+Selectors may be combined in many ways to achieve great specificity and flexibility.[7] Multiple selectors may be joined in a spaced list to specify elements by location, element type, id, class, or any combination thereof. The order of the selectors is important. For example, div .myClass {color: red;} applies to all elements of class myClass that are inside div elements, whereas .myClass div {color: red;} applies to all div elements that are inside elements of class myClass. This is not to be confused with concatenated identifiers such as div.myClass {color: red;} which applies to div elements of class myClass.
+
+The following table provides a summary of selector syntax indicating usage and the version of CSS that introduced it.[8]Thank you for your interest in contacting Wikipedia. Before proceeding, some important disclaimers:
+
+Wikipedia has no central editorial board. Contributions are made by a large number of volunteers at their own discretion. Edits are neither the responsibility of the Wikimedia Foundation (the organisation that hosts the site) nor of its staff and edits will not generally be made in response to an email request.
+Although Wikipedia was founded by Jimmy Wales, he is not personally responsible for our content.
+If you have questions about the concept of Wikipedia rather than a specific problem, the About Wikipedia page may help.
+If you want to ask other users for help with editing or using Wikipedia, stop by the Teahouse, Wikipedia's live help channel, or the help desk to ask someone for assistance.
+If you disagree with an article's content, or are involved in a content dispute, see Dispute resolution.
+The links on the left should direct you to how to contact us or resolve problems. If you cannot find your issue listed there, you can email helpful, experienced volunteers at info-en@wikimedia.org. Please refrain from emailing about disagreements with content; they will not be resolved via email.
+
+
+
+
+
+
+
+
+Categories: Wikipedia tutorialsWikipedia quick introductions
+Navigation menu
+Not logged in
+Talk
+Contributions
+Create account
+Log in
+Project pageTalk
+ReadView sourceView history
+Search
+Search Wikipedia
+Main page
+Contents
+Current events
+Random article
+About Wikipedia
+Contact us
+Donate
+Contribute
+Help
+Learn to edit
+Community portal
+Recent changes
+Upload file
+Tools
+What links here
+Related changes
+Special pages
+Permanent link
+Page information
+Wikidata item
+Print/export
+Download as PDF
+Printable version
+In other projects
+Wikimedia Commons
+Meta-Wiki
+Wikibooks
+Wikinews
+Wikiquote
+Wikiversity
+Wikivoyage
+Wiktionary
+
+Languages
+বাংলা
+भोजपुरी
+Español
+हिन्दी
+ଓଡ଼ିଆ
+سنڌي
+తెలుగు
+اردو
+中文
+64 more
+Edit links
+This page was last edited on 13 July 2020, at 20:45 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike License 3.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.Adiantum viridimontanum, the Green Mountain maidenhair fern, is a rare fern found in outcrops of serpentine rock in New England and Quebec. It is named after the site of its discovery in the Green Mountains in Vermont. Until 1991, it was grouped with the western maidenhair fern A. aleuticum, which itself was classified as a variety of the northern maidenhair fern A. pedatum. A. viridimontanum is a hybrid species and the other two ferns are distinct species, although it is difficult to distinguish between the three in the field. Due to the limited distribution of A. viridimontanum and its similarity to other species, little is known of its ecology. It thrives on sunny, disturbed areas where ultramafic rock is covered with thin soil, such as roadcuts, talus slopes, and asbestos mines. Individual plants seem long-lived, and new ones only infrequently reach maturity. One of four species endemic to serpentine in eastern North America, it is considered vulnerable due to its habitat restrictions. (Full article...)
+
+Recently featured: Operation Sandwedge"Delicate" (Taylor Swift song)Fort Vancouver Centennial half dollar
+ArchiveBy emailMore featured articlesAbout
+Did you know ...
+Kraftwerk Heimbach
+Kraftwerk Heimbach
+... that the eight original Francis turbines of Kraftwerk Heimbach (pictured), a hydro-electric power station that opened in 1905 as then the largest in Europe, served until 1974?
+... that Galadriel's gift of some of her hair to Gimli in The Lord of the Rings has echoes in both English literature and Norse legend?
+... that the English River within the East English River Provincial Park has no regulated flow and no pollution, unique in northwestern Ontario?
+... that Ruth Huenemann was one of the first researchers to make a connection between socioeconomic status and childhood obesity?
+... that Windows 2.0 is the last version of Windows that ran solely on floppy disks?
+... that Songbird Sings was a series of concerts that focused on Regine Velasquez's music career?
+... that Miguel Rivera sold cosmetics and appliances while working as a jockey?
+... that a TV station in Buffalo, New York, owned a 1921-vintage fire engine?
+ArchiveStart a new articleNominate an article
+In the news
+Max Verstappen in 2017
+Max Verstappen
+Hurricane Julia leaves more than 70 people dead across South and Central America.
+After an explosion damages the Crimean Bridge, Russia attacks many Ukrainian cities with missiles.
+In motor racing, Max Verstappen (pictured) wins the Formula One World Championship.
+The Nobel Prize in Chemistry is awarded to Carolyn Bertozzi, Karl Barry Sharpless, and Morten P. Meldal for their work on click chemistry and bioorthogonal chemistry.
+Ongoing: Mahsa Amini protestsRussian invasion of Ukraine
+Recent deaths: Billy Al BengstonJulian HammondFrank YousoGrace GlueckJoe RobertsAda Fisher
+Nominate an article
+On this day
+October 13
+
+Jigme Khesar Namgyel Wangchuck at the Enthronement of Naruhito.jpg
+645 – Goguryeo–Tang War: Led by Emperor Taizong, the Tang army was forced to abandon a siege of Ansi Fortress.
+1307 – Agents of King Philip IV of France launched a raid on the Knights Templar at dawn, arresting many members, subsequently torturing them into giving false confessions and burning them at the stake.
+1972 – Uruguayan Air Force Flight 571 crashed into a remote area in the Andes mountains near the border of Chile and Argentina; the 16 remaining survivors were not rescued until more than two months later.
+2011 – The Dragon King of Bhutan, Jigme Khesar Namgyel Wangchuck (pictured) married Jetsun Pema at the Punakha Dzong.
+Jamal Khashoggi (b. 1958)Walter Houser Brattain (d. 1987)Yuta Watanabe (b. 1994)
+More anniversaries: October 12October 13October 14
+ArchiveBy emailList of days of the year
+Today's featured picture
+Komodo dragon
+The Komodo dragon (Varanus komodoensis), also known as the Komodo monitor, is a species of monitor lizard in the family Varanidae that is endemic to the Indonesian islands of Komodo, Rinca, Flores, and Gili Motang. It is the largest extant species of lizard, growing to a maximum length of 3 metres (10 ft), and weighing up to approximately 70 kilograms (150 lb). The Komodo dragon prefers hot and dry places, and typically lives in dry, open grassland, savanna, and tropical forest at low elevations. As an ectotherm, it is most active in the day, although it exhibits some nocturnal activity. Komodo dragons are solitary, coming together only to breed and eat. They are capable of running rapidly in brief sprints up to 20 km/h (12 mph), diving up to 4.5 metres (15 ft), and climbing trees proficiently when young through use of their strong claws. To catch out-of-reach prey, it may stand on its hind legs and use its tail as a support. As it matures, its claws are used primarily as weapons, as its great size makes climbing impractical. This photograph of two Komodo dragons fighting was taken on the island of Rinca, within Komodo National Park.
+
+Photograph credit: Charles J. Sharp
+
+Recently featured: Eva Le GallienneRed knotFranchise Tax Board of California v. Hyatt
+ArchiveMore featured pictures
+Other areas of Wikipedia
+Community portal – The central hub for editors, with resources, links, tasks, and announcements.
+Village pump – Forum for discussions about Wikipedia itself, including policies and technical issues.
+Site news – Sources of news about Wikipedia and the broader Wikimedia movement.
+Teahouse – Ask basic questions about using or editing Wikipedia.
+Help desk – Ask questions about using or editing Wikipedia.
+Reference desk – Ask research questions about encyclopedic topics.
+Content portals – A unique way to navigate the encyclopedia.
+Wikipedia's sister projects
+Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other volunteer projects:
+
+Commons logo Commons
+Free media repository
+MediaWiki logo MediaWiki
+Wiki software development
+Meta-Wiki logo Meta-Wiki
+Wikimedia project coordination
+Wikibooks logo Wikibooks
+Free textbooks and manuals
+Wikidata logo Wikidata
+Free knowledge base
+Wikinews logo Wikinews
+Free-content news
+Wikiquote logo Wikiquote
+Collection of quotations
+Wikisource logo Wikisource
+Free-content library
+Wikispecies logo Wikispecies
+Directory of species
+Wikiversity logo Wikiversity
+Free learning tools
+Wikivoyage logo Wikivoyage
+Free travel guide
+Wiktionary logo Wiktionary
+Dictionary and thesaurus
+Wikipedia languages
+This Wikipedia is written in English. Many other Wikipedias are available; some of the largest are listed below.
+
+1,000,000+ articles
+العربيةDeutschEspañolFrançaisItalianoNederlands日本語PolskiPortuguêsРусскийSvenskaУкраїнськаTiếng Việt中文
+250,000+ articles
+Bahasa IndonesiaBahasa MelayuBân-lâm-gúБългарскиCatalàČeštinaDanskEsperantoEuskaraفارسی‎עברית한국어MagyarNorsk BokmålRomânăSrpskiSrpskohrvatskiSuomiTürkçe
+50,000+ articles
+AsturianuবাংলাBosanskiEestiΕλληνικάSimple EnglishGalegoHrvatskiLatviešuLietuviųമലയാളംМакедонскиNorsk nynorskShqipSlovenčinaSlovenščinaไทย
+Navigation menu
+Not logged in
+Talk
+Contributions
+Create account
+Log in
+Main PageTalk
+ReadView sourceView history
+Search
+Search Wikipedia
+Main page
+Contents
+Current events
+Random article
+About Wikipedia
+Contact us
+Donate
+Contribute
+Help
+Learn to edit
+Community portal
+Recent changes
+Upload file
+Tools
+What links here
+Related changes
+Special pages
+Permanent link
+Page information
+Wikidata item
+Print/export
+Download as PDF
+Printable version
+In other projects
+Wikimedia Commons
+MediaWiki
+Meta-Wiki
+Multilingual Wikisource
+Wikispecies
+Wikibooks
+Wikidata
+Wikimania
+Wikinews
+Wikiquote
+Wikisource
+Wikiversity
+Wikivoyage
+Wiktionary
+
+Languages
+العربية
+বাংলা
+Български
+Bosanski
+Català
+Čeština
+Dansk
+Deutsch
+Eesti
+Ελληνικά
+Español
+Esperanto
+Euskara
+فارسی
+Français
+Galego
+한국어
+Hrvatski
+Bahasa Indonesia
+Italiano
+עברית
+ქართული
+Latviešu
+Lietuvių
+Magyar
+Македонски
+Bahasa Melayu
+Nederlands
+日本語
+Norsk bokmål
+Norsk nynorsk
+Polski
+Português
+Română
+Русский
+Simple English
+Slovenčina
+Slovenščina
+Српски / srpski
+Srpskohrvatski / српскохрватски
+Suomi
+Svenska
+ไทย
+Türkçe
+Українська
+Tiếng Việt
+中文
+Text is available under the Creative Commons Attribution-ShareAlike License 3.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+</body>
+</html>
